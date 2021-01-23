@@ -6,13 +6,13 @@ type BottomProps = {
   online: boolean;
 };
 
-const Bottom = ({ name, rating, online }: BottomProps) => {
-  const convertRating = (num: number) => {
-    return (Math.round(num * 100) / 10).toFixed(1);
-  };
+const convertRating = (num: number) => {
+  return (Math.round(num * 100) / 10).toFixed(1);
+};
 
+const Bottom = ({ name, rating, online }: BottomProps) => {
   return (
-    <div className="venueBanner venueBottom">
+    <div className="venueBottom">
       <p className="venueTitle">{name}</p>
       <div className="venueStats">
         <p className="venueRating">{convertRating(rating)}</p>
@@ -22,4 +22,4 @@ const Bottom = ({ name, rating, online }: BottomProps) => {
   );
 };
 
-export default Bottom;
+export { Bottom, convertRating };

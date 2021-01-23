@@ -6,16 +6,16 @@ type imageContainerProps = {
   online: boolean;
 };
 
-const ImageContainer = ({ blurhash, online }: imageContainerProps) => {
-  const getClassNames = () => {
-    return online ? 'image' : 'image imageOffline';
-  };
+const getClassNames = (online: boolean) => {
+  return online ? 'image' : 'image imageOffline';
+};
 
+const ImageContainer = ({ blurhash, online }: imageContainerProps) => {
   return (
     <div className="venueImageContainer">
       {!online && <h3 className="offline">Offline</h3>}
       <Blurhash
-        className={getClassNames()}
+        className={getClassNames(online)}
         hash={blurhash}
         width={240}
         height={135}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import Venues from './components/Venues';
+import { Venues } from './components/Venues';
 
 interface IAppProps {}
 
