@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import Root from './Root';
+import VenueContainer from './VenueContainer';
 import '../App.css';
 
 export interface IVenue {
@@ -61,14 +61,14 @@ const getCarousel = (arr: IVenue[], category: string) => {
         // lazyLoad="ondemand"
       >
         {arr.map((venue) => (
-          <Root key={uuidv4()} venue={venue} />
+          <VenueContainer key={uuidv4()} venue={venue} />
         ))}
       </Slider>
     </div>
   );
 };
 
-const Venues: React.FC<IVenueProps> = () => {
+const Discovery: React.FC<IVenueProps> = () => {
   const [popularVenues, setPopularVenues] = useState<IVenue[]>([]);
   const [newVenues, setNewVenues] = useState<IVenue[]>([]);
   const [nearbyVenues, setNearbyVenues] = useState<IVenue[]>([]);
@@ -91,7 +91,7 @@ const Venues: React.FC<IVenueProps> = () => {
   }, []);
 
   return (
-    <section className="venues">
+    <section className="discovery">
       {getCarousel(popularVenues, 'Popular')}
       {getCarousel(newVenues, 'New')}
       {getCarousel(nearbyVenues, 'Nearby')}
@@ -99,4 +99,4 @@ const Venues: React.FC<IVenueProps> = () => {
   );
 };
 
-export { Venues, sortByPopularity, sortByNew, sortByOnline, getCarousel };
+export { Discovery, sortByPopularity, sortByNew, sortByOnline, getCarousel };

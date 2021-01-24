@@ -10,9 +10,9 @@ const getClassNames = (online: boolean) => {
   return online ? 'image' : 'image imageOffline';
 };
 
-const ImageContainer = ({ blurhash, online }: imageContainerProps) => {
+const VenueImage = ({ blurhash, online }: imageContainerProps) => {
   return (
-    <div className="venueImageContainer">
+    <div className="venueImage">
       {!online && <h3 className="offline">Offline</h3>}
       <Blurhash
         className={getClassNames(online)}
@@ -24,4 +24,4 @@ const ImageContainer = ({ blurhash, online }: imageContainerProps) => {
   );
 };
 
-export default ImageContainer;
+export default VenueImage;

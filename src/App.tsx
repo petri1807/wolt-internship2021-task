@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './App.css';
-import { Venues } from './components/Venues';
+import { Discovery } from './components/Discovery';
 
 interface IAppProps {}
 
 const App: React.FC<IAppProps> = () => {
-  return <Venues />;
+  return <Discovery />;
 };
 
 export default App;

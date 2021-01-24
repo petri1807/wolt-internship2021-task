@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-type BottomProps = {
+type VenueDetailsProps = {
   name: string;
   rating: number;
   online: boolean;
@@ -10,9 +10,9 @@ const convertRating = (num: number) => {
   return (Math.round(num * 100) / 10).toFixed(1);
 };
 
-const Bottom = ({ name, rating, online }: BottomProps) => {
+const VenueDetails = ({ name, rating, online }: VenueDetailsProps) => {
   return (
-    <div className="venueBottom">
+    <div className="venueDetails">
       <p className="venueTitle">{name}</p>
       <div className="venueStats">
         <p className="venueRating">{convertRating(rating)}</p>
@@ -22,4 +22,4 @@ const Bottom = ({ name, rating, online }: BottomProps) => {
   );
 };
 
-export { Bottom, convertRating };
+export { VenueDetails, convertRating };

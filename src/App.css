@@ -5,20 +5,14 @@
   --margin-padding: 10px;
 }
 
-/* REACT-SLICK CAROUSEL */
 .slick-list > div {
   margin-left: 0;
 }
 
-/* CATEGORY BANNER */
 .category {
   display: flex;
   justify-content: space-between;
   margin: auto;
-}
-
-.categoryTitle {
-  /* New / Popular / Nearby */
 }
 
 .categoryEntries {
@@ -27,28 +21,25 @@
   font-weight: 400;
 }
 
-/* CONTAINER FOR ALL CAROUSELS */
-.venues {
+.discovery {
   width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* CONTAINER FOR SINGLE VENUE ITEM */
-.venueRoot {
+.venueContainer {
   width: 240px;
   margin: 5px;
   border: 1px solid rgb(199, 199, 199);
   border-radius: 10px;
 }
 
-/* BLURHASH */
-.venueImageContainer {
+.venueImage {
   opacity: 0.8;
   height: 135px;
 }
 
-.venueImageContainer:hover {
+.venueImage:hover {
   opacity: 1;
 }
 
@@ -74,8 +65,7 @@
   opacity: 1;
 }
 
-/* VENUE INFO */
-.venueBottom {
+.venueDetails {
   margin: 0;
 }
 
@@ -88,7 +78,6 @@
   margin-bottom: 0;
 }
 
-/* CONTAINER FOR RATING & ONLINE STATUS */
 .venueStats {
   display: flex;
   flex-direction: row;
