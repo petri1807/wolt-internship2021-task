@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import VenueContainer from './VenueContainer';
+import data from '../data/discovery_page.json';
 import '../App.css';
 
 export interface IVenue {
@@ -73,13 +74,10 @@ const Discovery: React.FC<IVenueProps> = () => {
   const [newVenues, setNewVenues] = useState<IVenue[]>([]);
   const [nearbyVenues, setNearbyVenues] = useState<IVenue[]>([]);
 
-  const getVenues = async () => {
-    const response = await fetch('.././discovery_page.json');
-    const allVenues = await response.json();
-
-    const popularUnsorted = allVenues.sections[0].restaurants;
-    const newUnsorted = allVenues.sections[1].restaurants;
-    const nearbyUnsorted = allVenues.sections[2].restaurants;
+  const getVenues = () => {
+    const popularUnsorted = data.sections[0].restaurants;
+    const newUnsorted = data.sections[1].restaurants;
+    const nearbyUnsorted = data.sections[2].restaurants;
 
     setPopularVenues(sortByPopularity(popularUnsorted));
     setNewVenues(sortByNew(newUnsorted));
