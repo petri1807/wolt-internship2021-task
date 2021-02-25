@@ -1,4 +1,5 @@
 {
+  "homepage": "http://petri1807.github.io/wolt-internship2021-task",
   "name": "wolt-internship",
   "version": "0.1.0",
   "private": true,
@@ -27,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "testjest": "jest",
-    "coverage": "jest --coverage"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
   }
