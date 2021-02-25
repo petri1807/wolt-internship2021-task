@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live demo on [GitHub Pages](https://petri1807.github.io/wolt-internship2021-task/)
+
 ## Available Scripts
 
 In the project directory, you can run:
