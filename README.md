@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# Wolt internship summer 2021 task
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Live demo on [GitHub Pages](https://petri1807.github.io/wolt-internship2021-task/)
+
+The goal was to create an infinitely scrolling carousel displaying imaginary restaurant data, divived into three categories (Popular, New, Nearby). 
 
 ## Available Scripts
 
