@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wolt-internship2021-task/static/css/main.b03f86dd.chunk.css",
-    "main.js": "/wolt-internship2021-task/static/js/main.bcb91f78.chunk.js",
-    "main.js.map": "/wolt-internship2021-task/static/js/main.bcb91f78.chunk.js.map",
+    "main.js": "/wolt-internship2021-task/static/js/main.fee01dc1.chunk.js",
+    "main.js.map": "/wolt-internship2021-task/static/js/main.fee01dc1.chunk.js.map",
     "runtime-main.js": "/wolt-internship2021-task/static/js/runtime-main.b3a5936f.js",
     "runtime-main.js.map": "/wolt-internship2021-task/static/js/runtime-main.b3a5936f.js.map",
     "static/css/2.adb8e262.chunk.css": "/wolt-internship2021-task/static/css/2.adb8e262.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.adb8e262.chunk.css",
     "static/js/2.a54b45bf.chunk.js",
     "static/css/main.b03f86dd.chunk.css",
-    "static/js/main.bcb91f78.chunk.js"
+    "static/js/main.fee01dc1.chunk.js"
   ]
 }
