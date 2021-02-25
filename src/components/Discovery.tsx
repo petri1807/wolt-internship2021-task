@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import VenueContainer from './VenueContainer';
-import data from '../data/discovery_page.json';
+import data from '../discovery_page.json';
 import '../App.css';
 
 export interface IVenue {
